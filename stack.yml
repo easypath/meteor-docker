@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+
+  app:
+    image: abernix/meteord:node-8-base
+    ports:
+      - 80:80
+    volumes:
+      - "./app:/bundle"
+    env_file:
+      - "config.env"
