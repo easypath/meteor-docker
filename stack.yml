@@ -3,9 +3,9 @@ version: "3.7"
 services:
 
   app:
-    image: abernix/meteord:node-8-base
+    image: zodern/meteor:root
     ports:
-      - 80:80
+      - 80:3000
     volumes:
       - "./app:/bundle"
     env_file:
